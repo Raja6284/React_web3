@@ -58,4 +58,35 @@
     color: #666;
   }
   
-  
+  /* Style for the button */
+.generate-btn {
+  background-color: #007bff; /* Primary blue color */
+  color: #fff; /* White text */
+  padding: 12px 24px; /* Button padding */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the button */
+.generate-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+/* Active state for the button (when clicked) */
+.generate-btn:active {
+  background-color: #004080; /* Even darker blue when clicked */
+  transform: translateY(0); /* Reset lift */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow */
+}
+
+/* Focus state for accessibility */
+.generate-btn:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4); /* Add focus ring */
+}
